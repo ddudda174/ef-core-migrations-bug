@@ -1,0 +1,12 @@
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Entities\bin\Debug\net6.0\EFCoreOwnedType.Entities.deps.json
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Entities\bin\Debug\net6.0\EFCoreOwnedType.Entities.dll
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Entities\bin\Debug\net6.0\EFCoreOwnedType.Entities.pdb
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Entities\obj\Debug\net6.0\EFCoreOwnedType.Entities.csproj.AssemblyReference.cache
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Entities\obj\Debug\net6.0\EFCoreOwnedType.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Entities\obj\Debug\net6.0\EFCoreOwnedType.Entities.AssemblyInfoInputs.cache
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Entities\obj\Debug\net6.0\EFCoreOwnedType.Entities.AssemblyInfo.cs
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Entities\obj\Debug\net6.0\EFCoreOwnedType.Entities.csproj.CoreCompileInputs.cache
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Entities\obj\Debug\net6.0\EFCoreOwnedType.Entities.dll
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Entities\obj\Debug\net6.0\refint\EFCoreOwnedType.Entities.dll
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Entities\obj\Debug\net6.0\EFCoreOwnedType.Entities.pdb
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Entities\obj\Debug\net6.0\ref\EFCoreOwnedType.Entities.dll

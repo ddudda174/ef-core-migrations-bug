@@ -1,0 +1,29 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
+
+version: "3.8"
+
+services:
+  server:
+    build: server
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      CONNECTIONSTRINGS__MARIADB: server=mariadb;Port=3306;database=EfCoreOwnedType;uid=root;password=maria_db_12345;Convert Zero Datetime=true
+    ports:
+      - 5000:5000
+    profiles:
+      - server
+
+  mariadb:
+    image: mariadb:10.7
+    environment:
+      MARIADB_ROOT_PASSWORD: maria_db_12345
+      MARIADB_USER: root
+      MARIADB_PASSWORD: maria_db_12345
+      MARIADB_DATABASE: EfCoreOwnedType
+    volumes:
+      - mariadb-data:/var/lib/mysql
+    ports:
+      - 3308:3306
+
+volumes:
+  mariadb-data:

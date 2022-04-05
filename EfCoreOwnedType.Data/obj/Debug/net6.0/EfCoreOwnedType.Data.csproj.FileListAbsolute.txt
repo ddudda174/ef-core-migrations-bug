@@ -1,0 +1,15 @@
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Data\bin\Debug\net6.0\EfCoreOwnedType.Data.deps.json
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Data\bin\Debug\net6.0\EfCoreOwnedType.Data.dll
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Data\bin\Debug\net6.0\EfCoreOwnedType.Data.pdb
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Data\bin\Debug\net6.0\EFCoreOwnedType.Entities.dll
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Data\bin\Debug\net6.0\EFCoreOwnedType.Entities.pdb
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Data\obj\Debug\net6.0\EfCoreOwnedType.Data.csproj.AssemblyReference.cache
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Data\obj\Debug\net6.0\EfCoreOwnedType.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Data\obj\Debug\net6.0\EfCoreOwnedType.Data.AssemblyInfoInputs.cache
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Data\obj\Debug\net6.0\EfCoreOwnedType.Data.AssemblyInfo.cs
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Data\obj\Debug\net6.0\EfCoreOwnedType.Data.csproj.CoreCompileInputs.cache
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Data\obj\Debug\net6.0\EfCoreOwnedType.Data.csproj.CopyComplete
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Data\obj\Debug\net6.0\EfCoreOwnedType.Data.dll
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Data\obj\Debug\net6.0\refint\EfCoreOwnedType.Data.dll
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Data\obj\Debug\net6.0\EfCoreOwnedType.Data.pdb
+C:\Users\daniel.dudda\Downloads\example ef core owned type migrations\EfCoreOwnedType.Data\obj\Debug\net6.0\ref\EfCoreOwnedType.Data.dll
