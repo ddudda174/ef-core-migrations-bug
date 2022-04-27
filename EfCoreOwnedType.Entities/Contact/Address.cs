@@ -1,7 +1,5 @@
 namespace EFCoreOwnedType.Entities.Contact;
 
-using EFCoreOwnedType.Entities;
-
 public class Address : BaseEntity
 {
     public string Street { get; set; }

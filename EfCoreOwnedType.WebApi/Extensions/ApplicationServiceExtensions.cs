@@ -1,8 +1,8 @@
 namespace EfCoreOwnedType.WebApi.Extensions
 {
     using System;
-    using EfCoreOwnedType.Data;
-    using EfCoreOwnedType.Data.DataSources;
+    using Data;
+    using Data.DataSources;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.DependencyInjection;
 

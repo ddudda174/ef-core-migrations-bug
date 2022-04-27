@@ -38,10 +38,6 @@ namespace EfCoreOwnedType.Data.Migrations
                     b.Property<DateTime>("Created")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<string>("DataId")
-                        .HasMaxLength(22)
-                        .HasColumnType("varchar(22)");
-
                     b.Property<bool>("IsDeleted")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("tinyint(1)")
@@ -64,8 +60,6 @@ namespace EfCoreOwnedType.Data.Migrations
 
                     b.HasIndex("AddressId");
 
-                    b.HasIndex("DataId");
-
                     b.HasIndex("Mail")
                         .IsUnique();
 
@@ -74,11 +68,10 @@ namespace EfCoreOwnedType.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "uorM-JDuHEaAR5RAfoOHeA",
+                            Id = "dQR_8UZvPk61eK5bNTJWlg",
                             AccountType = "IsAdmin",
-                            AddressId = "TwFrjqcdEE2PvTh2SDNVDA",
+                            AddressId = "uXMHgZAkm0K3A4LBsxGhZg",
                             Created = new DateTime(2022, 2, 23, 12, 38, 6, 165, DateTimeKind.Utc).AddTicks(3804),
-                            DataId = "asF5V8C9706efOtbfaRn_Q",
                             IsDeleted = false,
                             LastActive = new DateTime(2022, 2, 23, 12, 38, 6, 165, DateTimeKind.Utc).AddTicks(3803),
                             Mail = "test@mail.de",
@@ -125,76 +118,12 @@ namespace EfCoreOwnedType.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "TwFrjqcdEE2PvTh2SDNVDA",
+                            Id = "uXMHgZAkm0K3A4LBsxGhZg",
                             City = "Citname",
                             HouseNumber = "1",
                             IsDeleted = false,
                             PostalCode = "12345",
                             Street = "Street"
-                        });
-                });
-
-            modelBuilder.Entity("EFCoreOwnedType.Entities.Person.PersonalData", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasMaxLength(22)
-                        .HasColumnType("varchar(22)");
-
-                    b.Property<DateTime>("BirthDate")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("BirthName")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("BirthPlace")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("FamilyName")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("FamilyStatus")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("FirstName")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Gender")
-                        .HasColumnType("longtext");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<string>("NameAffix")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Nationality")
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime?>("ResidentSince")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Salutation")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("TaxNo")
-                        .HasColumnType("longtext");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("PersonalData");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "asF5V8C9706efOtbfaRn_Q",
-                            BirthDate = new DateTime(2002, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            BirthName = "PersonBirth",
-                            BirthPlace = "Cityname",
-                            FamilyName = "Person",
-                            FirstName = "Test",
-                            Gender = "male",
-                            IsDeleted = false,
-                            Salutation = "Herr"
                         });
                 });
 
@@ -204,9 +133,99 @@ namespace EfCoreOwnedType.Data.Migrations
                         .WithMany()
                         .HasForeignKey("AddressId");
 
-                    b.HasOne("EFCoreOwnedType.Entities.Person.PersonalData", "Data")
-                        .WithMany()
-                        .HasForeignKey("DataId");
+                    b.OwnsOne("EFCoreOwnedType.Entities.Person.PersonalData", "Data", b1 =>
+                        {
+                            b1.Property<string>("Id")
+                                .ValueGeneratedOnAdd()
+                                .HasMaxLength(22)
+                                .HasColumnType("varchar(22)");
+
+                            b1.Property<DateTime>("BirthDate")
+                                .HasColumnType("datetime(6)");
+
+                            b1.Property<string>("BirthName")
+                                .HasMaxLength(64)
+                                .HasColumnType("varchar(64)");
+
+                            b1.Property<string>("BirthPlace")
+                                .IsRequired()
+                                .HasMaxLength(128)
+                                .HasColumnType("varchar(128)");
+
+                            b1.Property<string>("FamilyName")
+                                .IsRequired()
+                                .HasMaxLength(64)
+                                .HasColumnType("varchar(64)");
+
+                            b1.Property<string>("FamilyStatus")
+                                .HasMaxLength(32)
+                                .HasColumnType("varchar(32)");
+
+                            b1.Property<string>("FirstName")
+                                .IsRequired()
+                                .HasMaxLength(64)
+                                .HasColumnType("varchar(64)");
+
+                            b1.Property<string>("Gender")
+                                .IsRequired()
+                                .HasMaxLength(16)
+                                .HasColumnType("varchar(16)");
+
+                            b1.Property<bool>("IsDeleted")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("tinyint(1)")
+                                .HasDefaultValue(false);
+
+                            b1.Property<string>("NameAffix")
+                                .HasMaxLength(64)
+                                .HasColumnType("varchar(64)");
+
+                            b1.Property<string>("Nationality")
+                                .HasMaxLength(64)
+                                .HasColumnType("varchar(64)");
+
+                            b1.Property<DateTime?>("ResidentSince")
+                                .HasColumnType("datetime(6)");
+
+                            b1.Property<string>("Salutation")
+                                .IsRequired()
+                                .HasMaxLength(16)
+                                .HasColumnType("varchar(16)");
+
+                            b1.Property<string>("TaxNo")
+                                .HasMaxLength(64)
+                                .HasColumnType("varchar(64)");
+
+                            b1.Property<string>("UserId")
+                                .IsRequired()
+                                .HasMaxLength(22)
+                                .HasColumnType("varchar(22)");
+
+                            b1.HasKey("Id");
+
+                            b1.HasIndex("UserId")
+                                .IsUnique();
+
+                            b1.ToTable("PersonalData", (string)null);
+
+                            b1.WithOwner()
+                                .HasForeignKey("UserId");
+
+                            b1.HasData(
+                                new
+                                {
+                                    Id = "Bw9CbRsw20--SRUEM8-Xrg",
+                                    BirthDate = new DateTime(2002, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                                    BirthName = "PersonBirth",
+                                    BirthPlace = "Cityname",
+                                    FamilyName = "Person",
+                                    FirstName = "Test",
+                                    Gender = "male",
+                                    IsDeleted = false,
+                                    Salutation = "Herr",
+                                    UserId = "dQR_8UZvPk61eK5bNTJWlg"
+                                });
+                        });
 
                     b.Navigation("Address");
 

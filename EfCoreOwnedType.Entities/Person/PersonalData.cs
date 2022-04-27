@@ -1,7 +1,6 @@
 namespace EFCoreOwnedType.Entities.Person;
 
 using System;
-using EFCoreOwnedType.Entities;
 
 public class PersonalData : BaseEntity
 {

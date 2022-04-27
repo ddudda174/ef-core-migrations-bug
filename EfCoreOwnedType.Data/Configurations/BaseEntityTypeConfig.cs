@@ -1,9 +1,9 @@
 namespace EfCoreOwnedType.Data.Configurations;
 
-using EfCoreOwnedType.Data.ValueGenerators;
 using EFCoreOwnedType.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using ValueGenerators;
 
 public abstract class BaseEntityTypeConfig<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : BaseEntity
 {

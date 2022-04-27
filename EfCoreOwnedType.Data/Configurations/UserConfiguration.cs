@@ -1,9 +1,9 @@
 namespace EfCoreOwnedType.Data.Configurations
 {
-    using EfCoreOwnedType.Data.ValueGenerators;
     using EFCoreOwnedType.Entities.Account;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Metadata.Builders;
+    using ValueGenerators;
 
     internal class UserConfiguration : BaseEntityTypeConfig<User>
     {

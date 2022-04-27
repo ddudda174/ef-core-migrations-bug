@@ -1,10 +1,9 @@
 ﻿namespace EfCoreOwnedType.Data.DataSources
 {
-    using EfCoreOwnedType.Data;
-    using EFCoreOwnedType.Entities.Account;
-    using Microsoft.EntityFrameworkCore;
     using System.Collections.Generic;
     using System.Threading.Tasks;
+    using EFCoreOwnedType.Entities.Account;
+    using Microsoft.EntityFrameworkCore;
 
     public class UserStore : BaseStore<User>
     {

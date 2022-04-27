@@ -1,8 +1,7 @@
 namespace EfCoreOwnedType.Data.DataSources
 {
-    using EfCoreOwnedType.Data;
-    using Microsoft.EntityFrameworkCore;
     using System.Linq;
+    using Microsoft.EntityFrameworkCore;
 
     public class BaseStore<TEntity> where TEntity : class
     {

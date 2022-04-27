@@ -1,7 +1,7 @@
 namespace EfCoreOwnedType.WebApi
 {
-    using EfCoreOwnedType.Data;
-    using EfCoreOwnedType.WebApi.Extensions;
+    using Data;
+    using Extensions;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.EntityFrameworkCore;

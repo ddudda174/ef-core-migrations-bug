@@ -1,7 +1,7 @@
 namespace EfCoreOwnedType.WebApi.Controllers.User
 {
-    using EfCoreOwnedType.Data.DataSources;
-    using EfCoreOwnedType.WebApi.Controllers.Base;
+    using Base;
+    using Data.DataSources;
 
     public class UsersController : BaseV1Controller
     {

@@ -1,9 +1,9 @@
 namespace EfCoreOwnedType.Data.ValueGenerators;
 
+using System;
 using EFCoreOwnedType.Entities;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.ValueGeneration;
-using System;
 
 public class DbIdGenerator : ValueGenerator<DbId>
 {
